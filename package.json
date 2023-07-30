@@ -1,0 +1,29 @@
+{
+  "name": "calculatorapp",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/preact": "^2.2.1",
+    "@astrojs/vercel": "^3.7.4",
+    "@fontsource/league-spartan": "^5.0.5",
+    "astro": "^2.9.3",
+    "astro-compress": "^1.1.50",
+    "autoprefixer": "^10.4.14",
+    "boxicons": "^2.1.4",
+    "install": "^0.13.0",
+    "preact": "^10.6.5",
+    "sass": "^1.64.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "postcss": "^8.4.27"
+  }
+}

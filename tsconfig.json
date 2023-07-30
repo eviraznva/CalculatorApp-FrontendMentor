@@ -1,0 +1,15 @@
+{
+
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "baseUrl": ".",
+    "paths": {
+      "@styles/*": ["src/styles/*"],
+      "@components/*": ["src/components/*"],
+      "@models/*": ["src/models/*"],
+      "@misc/*": ["src/misc/*"],
+      "@helper/*": ["src/helper/*"],
+    },
+  }
+}

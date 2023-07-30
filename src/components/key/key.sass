@@ -1,0 +1,41 @@
+.key
+  text-align: center
+  font-size: 32px
+  border-radius: .5rem
+  cursor: pointer
+  transition: 250ms linear
+  color: var(--key-color)
+  box-shadow: var(--key-box-shadow) var(--key-box-shadow-color)
+  background-color: var(--key-bg)
+  padding: 1rem
+
+  &[data-key="DEL"], &[data-key="RESET"]
+    padding-top: 20px
+    font-size: 20px
+    color: var(--key-del-reset-color)
+    box-shadow: var(--key-box-shadow) var(--key-box-shadow-del-reset-color)
+    background-color: var(--key-del-reset-bg)
+
+  &[data-key="DEL"]:hover, &[data-key="RESET"]:hover
+    background-color: var(--key-hover-del-reset-bg)
+
+  &[data-key="="]
+    padding-top: 20px
+    font-size: 20px
+    background-color: var(--key-eq-bg)
+    box-shadow: var(--key-box-shadow) var(--key-box-shadow-rq-color)
+    color: var(--key-eq-color)
+
+  &[data-key="="]:hover
+    background-color: var(--key-hover-eq-bg)
+
+  &:hover
+    background-color: var(--key-hover-bg)
+
+  &:nth-last-child(-n+2)
+    grid-column: span 2
+
+  @media screen and (min-width: 880px)
+    &[data-key="DEL"], &[data-key="RESET"], &[data-key="="]
+      font-size: 200%
+      padding-top: 1rem

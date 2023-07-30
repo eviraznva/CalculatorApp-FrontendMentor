@@ -1,0 +1,45 @@
+.theme-switcher
+  position: relative
+  display: flex
+  align-items: center
+  width: 4.3rem
+  margin-left: 2rem
+  margin-bottom: .2rem
+  border-radius: 1rem
+  background-color: var(--theme-switcher-bg)
+  padding: .2rem
+
+  .number-container
+    position: absolute
+    width: 100%
+    top: -1.1rem
+    font-size: .8rem
+    color: var(--theme-switcher-number-container-color)
+
+    span
+      font-size: 1rem
+
+      &:nth-child(1)
+        padding-left: .5rem
+        padding-right: .9rem
+
+      &:nth-child(2)
+        padding-right: .8rem
+
+  .circle
+    font-size: 1.3rem
+    transition: color 250ms linear
+    cursor: pointer
+    color: var(--theme-switcher-circle-color)
+
+    &:hover
+      color: var(--theme-switcher-circle-hover-color)
+
+  .circle.step-1
+    transform: translateX(0%)
+
+  .circle.step-2
+    transform: translateX(95%)
+
+  .circle.step-3
+    transform: translateX(205%)

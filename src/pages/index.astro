@@ -1,0 +1,32 @@
+---
+import "@fontsource/league-spartan/700.css";
+import "boxicons/css/boxicons.min.css";
+import "@styles/global.sass";
+import { KeysContainer, ThemeSwitcher } from "@components/index";
+---
+
+<html lang="en" data-theme="theme-1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Calculator app!!!!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <section class="header">
+        <div class="calc">calc</div>
+        <div class="theme-switcher-container">
+          <div>THEME</div>
+          <ThemeSwitcher client:only="preact" />
+        </div>
+      </section>
+      <section class="screen"><span></span></section>
+      <section class="keys">
+        <KeysContainer client:only="preact" />
+      </section>
+    </main>
+  </body>
+</html>
